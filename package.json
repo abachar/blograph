@@ -12,11 +12,14 @@
   "dependencies": {
     "babel-preset-stage-0": "^6.5.0",
     "express": "^4.14.0",
+    "express-graphql": "^0.5.3",
     "faker": "^3.1.0",
     "graphql": "^0.6.2",
     "lodash": "^4.15.0",
     "mysql": "^2.11.1",
-    "sequelize": "^3.24.0"
+    "promise": "^7.1.1",
+    "sequelize": "^3.24.0",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

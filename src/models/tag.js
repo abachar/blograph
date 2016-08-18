@@ -1,6 +1,6 @@
 export default function (sequelize, DataTypes) {
   return sequelize.define('Tag', {
-    name: DataTypes.STRING
+    label: DataTypes.STRING
   }, {
     tableName: 'tags',
     classMethods: {
