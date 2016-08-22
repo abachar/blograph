@@ -8,7 +8,8 @@ const sequelize = new Sequelize('blograph_db', 'root', '', {
   dialect: 'mysql',
   define: {
     underscored: true
-  }
+  },
+  logging: false
 });
 
 // Import all models

@@ -16,4 +16,4 @@ Promise.all([
     // Initialize database
     createDB()
   ])
-  .then(() => winston.info('Blograph is started.'));
+  .then(() => winston.info('BloGraph server started.'));

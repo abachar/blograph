@@ -20,7 +20,7 @@ export default function createServer() {
     }));
 
     app.listen(PORT, () => {
-      winston.info(`Server listening on port ${PORT}`);
+      winston.info(`BloGraph server listening on port ${PORT}`);
       resolve();
     });
   });
