@@ -5,10 +5,13 @@ import models from '../../models'
 export default {
   type: new GraphQLList(UserType),
   args: {
-    id:        { type: GraphQLInt },
-    firstName: { type: GraphQLString },
-    lastName:  { type: GraphQLString },
-    email:     { type: GraphQLString }
+    id: {type: GraphQLInt},
+    firstName: {
+      type: GraphQLString,
+      description: 'The user first name'
+    },
+    lastName: {type: GraphQLString, description: 'The user last name'},
+    email: {type: GraphQLString}
   },
   resolve (root, args) {
     return models.User.findAll({where: args});
